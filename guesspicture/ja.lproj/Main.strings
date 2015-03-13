@@ -1,0 +1,21 @@
+
+/* Class = "IBUILabel"; text = "1/10"; ObjectID = "2Vp-4z-Gyx"; */
+"2Vp-4z-Gyx.text" = "1/10";
+
+/* Class = "IBUIButton"; normalTitle = "ヒント"; ObjectID = "8uv-Zr-bBV"; */
+"8uv-Zr-bBV.normalTitle" = "ヒント";
+
+/* Class = "IBUIButton"; normalTitle = "10000"; ObjectID = "R4w-3N-mg9"; */
+"R4w-3N-mg9.normalTitle" = "10000";
+
+/* Class = "IBUIButton"; normalTitle = "拡大"; ObjectID = "ewJ-hX-ye2"; */
+"ewJ-hX-ye2.normalTitle" = "拡大";
+
+/* Class = "IBUIButton"; normalTitle = "help"; ObjectID = "gos-ry-skS"; */
+"gos-ry-skS.normalTitle" = "help";
+
+/* Class = "IBUILabel"; text = "あのドラマ"; ObjectID = "vcE-4G-ECD"; */
+"vcE-4G-ECD.text" = "あのドラマ";
+
+/* Class = "IBUIButton"; normalTitle = "次の問題"; ObjectID = "xBX-6o-K4f"; */
+"xBX-6o-K4f.normalTitle" = "次の問題";

@@ -12,8 +12,9 @@
 		3323138C1AA68F9900A24D9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323138B1AA68F9900A24D9E /* ViewController.m */; };
 		3323138F1AA68F9900A24D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3323138D1AA68F9900A24D9E /* Main.storyboard */; };
 		332313911AA68F9900A24D9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332313901AA68F9900A24D9E /* Images.xcassets */; };
-		332313941AA68F9900A24D9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332313921AA68F9900A24D9E /* LaunchScreen.xib */; };
 		332313A01AA68F9900A24D9E /* guesspictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323139F1AA68F9900A24D9E /* guesspictureTests.m */; };
+		332313AC1AA9B9C700A24D9E /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 332313AB1AA9B9C700A24D9E /* questions.plist */; };
+		332313AF1AA9BA0000A24D9E /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 332313AE1AA9BA0000A24D9E /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +37,13 @@
 		3323138B1AA68F9900A24D9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3323138E1AA68F9900A24D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		332313901AA68F9900A24D9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		332313931AA68F9900A24D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		332313991AA68F9900A24D9E /* guesspictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = guesspictureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3323139E1AA68F9900A24D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3323139F1AA68F9900A24D9E /* guesspictureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = guesspictureTests.m; sourceTree = "<group>"; };
+		332313AB1AA9B9C700A24D9E /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		332313AD1AA9BA0000A24D9E /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		332313AE1AA9BA0000A24D9E /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		332313B41AA9CE2500A24D9E /* guesspicture-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "guesspicture-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,11 @@
 				332313881AA68F9900A24D9E /* AppDelegate.m */,
 				3323138A1AA68F9900A24D9E /* ViewController.h */,
 				3323138B1AA68F9900A24D9E /* ViewController.m */,
+				332313AD1AA9BA0000A24D9E /* Question.h */,
+				332313B41AA9CE2500A24D9E /* guesspicture-prefix.pch */,
+				332313AE1AA9BA0000A24D9E /* Question.m */,
 				3323138D1AA68F9900A24D9E /* Main.storyboard */,
 				332313901AA68F9900A24D9E /* Images.xcassets */,
-				332313921AA68F9900A24D9E /* LaunchScreen.xib */,
 				332313831AA68F9900A24D9E /* Supporting Files */,
 			);
 			path = guesspicture;
@@ -96,6 +102,7 @@
 		332313831AA68F9900A24D9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				332313AB1AA9B9C700A24D9E /* questions.plist */,
 				332313841AA68F9900A24D9E /* Info.plist */,
 				332313851AA68F9900A24D9E /* main.m */,
 			);
@@ -200,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3323138F1AA68F9900A24D9E /* Main.storyboard in Resources */,
-				332313941AA68F9900A24D9E /* LaunchScreen.xib in Resources */,
+				332313AC1AA9B9C700A24D9E /* questions.plist in Resources */,
 				332313911AA68F9900A24D9E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3323138C1AA68F9900A24D9E /* ViewController.m in Sources */,
+				332313AF1AA9BA0000A24D9E /* Question.m in Sources */,
 				332313891AA68F9900A24D9E /* AppDelegate.m in Sources */,
 				332313861AA68F9900A24D9E /* main.m in Sources */,
 			);
@@ -250,14 +258,6 @@
 				3323138E1AA68F9900A24D9E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		332313921AA68F9900A24D9E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				332313931AA68F9900A24D9E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +412,7 @@
 				332313A51AA68F9900A24D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		332313A61AA68F9900A24D9E /* Build configuration list for PBXNativeTarget "guesspictureTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				332313A81AA68F9900A24D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

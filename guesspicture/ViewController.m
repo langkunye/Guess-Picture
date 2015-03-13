@@ -137,7 +137,7 @@
     if (self.index >= self.questions.count) {
         //終わった場合、xcodeで表示される
         NSLog(@"勝利！！");
-        
+        NSLog(@"勝利！！");
         return;
     }
     //2.問題のタイトル

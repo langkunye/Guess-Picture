@@ -137,7 +137,6 @@
     if (self.index >= self.questions.count) {
         //終わった場合、xcodeで表示される
         NSLog(@"勝利！！");
-        NSLog(@"勝利！！");
         return;
     }
     //2.問題のタイトル
@@ -254,8 +253,6 @@
 -(void)optionClick:(UIButton *)btn
 {
     NSLog(@"----------%@",btn.currentTitle);
-    //1>把备选按钮中的文字填充到答案区
-    //找答案去中第一个按钮文字为空得按钮
     for (UIButton *button in self.answerView.subviews) {
         if(button.currentTitle.length == 0){
             [button setTitle:btn.currentTitle forState:UIControlStateNormal];
@@ -266,10 +263,8 @@
     //ボタンを隠し
     btn.hidden = YES;
 
-    //3判断胜负
-    //3.1所有的答案按钮都填满,遍历所有答案区的按钮
+    //3正確するかとうか　判断する
     BOOL isFUll = YES;
-    //临时答案，给现在提供判断
     NSMutableString *strM = [NSMutableString string];
     for (UIButton *btn in self.answerView.subviews) {
         if(btn.currentTitle.length == 0){
